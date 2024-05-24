@@ -1,0 +1,17 @@
+name = "dn_shell"
+version = "0.1.0-dev"
+
+
+description = "Execute shell commands"
+licences = ["Apache-2.0"]
+repository = { type = "github", user = "drornir", repo = "gleam-shell" }
+links = [{ title = "Website", href = "https://gleam.run" }]
+
+# For a full reference of all the available options, you can have a look at
+# https://gleam.run/writing-gleam/gleam-toml/.
+
+[dependencies]
+gleam_stdlib = ">= 0.34.0 and < 2.0.0"
+
+[dev-dependencies]
+gleeunit = ">= 1.0.0 and < 2.0.0"
