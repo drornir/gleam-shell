@@ -66,7 +66,7 @@ pub type CommandStatus {
 }
 
 pub type Err {
-  PreparingCommandError
+  InputError(msg: String)
 }
 
 // RuntimeCommand is the platform specific part of the command
