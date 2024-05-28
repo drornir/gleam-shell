@@ -6,6 +6,7 @@
 ```sh
 gleam add dn_shell
 ```
+
 ```gleam
 import dn_shell
 
@@ -22,4 +23,10 @@ Further documentation can be found at <https://hexdocs.pm/dn_shell>.
 gleam run   # Run the project
 gleam test  # Run the tests
 gleam shell # Run an Erlang shell
+```
+
+```zsh
+export MY_SHELL=$(basename $SHELL)
+rebar3 completion -s $MY_SHELL -f autocomplete_rebar3.$MY_SHELL
+source _build/default/autocomplete_rebar3.$MY_SHELL
 ```
