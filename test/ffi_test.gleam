@@ -11,11 +11,11 @@ pub fn runtime_test() {
 }
 
 pub fn exec_ffi_is_defined_test() {
-  let _ = ffi.exec_erlang_ffi("", "", [], [])
+  let _ = ffi.unsafe_exec_erlang_ffi("", "", [], [])
 }
 
-pub fn execute_test() {
-  ffi.execute("a", "b", [], [])
+pub fn execute_hello_world_test() {
+  ffi.execute(".", "echo", ["hello $WORLD"], [#("WORLD", "world")])
   // dynamic.from(#("", ""))
   |> should.equal(Ok(ffi.ExecStarted(pid: 0)))
 }

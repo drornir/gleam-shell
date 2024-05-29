@@ -6,7 +6,14 @@
 do_test() -> {}.
 
 do_exec(Cwd, Executable, Args, EnvList) ->
-
+	% unix sockets -
+	% AF_UNIX, AF_LOCAL from https://www.man7.org/linux/man-pages/man2/socket.2.html
+	% https://www.erlang.org/doc/apps/kernel/socket.html#open/3
+	%
+	% bash / sh -
+	% what if i just write a shell script that works on most modern unix systems?
+	%
+	% https://chatgpt.com/share/caf241ee-d7da-443f-98f5-17a0202e855c
 	{ok, {0}}.
 
 runtime_bit_array() ->
